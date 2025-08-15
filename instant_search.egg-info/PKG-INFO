@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: instant-search
+Version: 1.0.0
+Summary: Instant multi-platform search tool that opens 9 search sites simultaneously
+Home-page: https://github.com/atakansan/search
+Author: Atakan San
+Author-email: 
+Project-URL: Bug Reports, https://github.com/atakansan/search/issues
+Project-URL: Source, https://github.com/atakansan/search
+Keywords: search,browser,automation,productivity,multi-search
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Search Tools Collection
+
+Bu koleksiyon çeşitli arama araçlarını içerir.
+
+## Ana Dosyalar
+
+- **`instant_search_main.py`** - Ana arama scripti (`/usr/local/bin/s` kopyası)
+  - Terminal'de `s` komutu ile çalışır  
+  - 9 farklı site açar (sıralama):
+    1. OneSearch (Cisco)
+    2. Circuit (Cisco)
+    3. Perplexity AI
+    4. Google
+    5. Claude AI
+    6. ChatGPT
+    7. GitHub
+    8. Wikipedia
+    9. LinkedIn
+  - Sorguyu clipboard'a kopyalar
+
+- **`instant_search.py`** - Alternatif versiyon
+
+## Kullanım
+
+Terminal'de:
+```bash
+s "arama terimi"
+```
+
+Veya script'i doğrudan çalıştır:
+```bash
+python3 instant_search_main.py "arama terimi"
+```
+
+## Kurulum
+
+Ana script `/usr/local/bin/s` konumunda kurulu ve PATH'te mevcut.
+
+## Kurulum (Paket olarak)
+
+### PyPI'dan kurulum (yakında)
+```bash
+pip install instant-search
+```
+
+### GitHub'dan kurulum
+```bash
+pip install git+https://github.com/atakansan/search.git
+```
+
+### Manuel kurulum
+```bash
+git clone https://github.com/atakansan/search.git
+cd search
+pip install -e .
+```
+
+Kurulumdan sonra şu komutlarla kullanabilirsin:
+```bash
+instant-search "arama terimi"
+isearch "arama terimi"  
+s "arama terimi"
+```
+
+## Geliştirme
+
+```bash
+git clone https://github.com/atakansan/search.git
+cd search
+pip install -e .
+```
+
+## Not
+
+Eski search ve search2 dizinleri archive'a taşındı. Aktif olan sadece bu search-final dizini.

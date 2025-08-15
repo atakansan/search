@@ -1,0 +1,4 @@
+[console_scripts]
+instant-search = instant_search.main:main
+isearch = instant_search.main:main
+s = instant_search.main:main

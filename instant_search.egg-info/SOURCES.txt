@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+instant_search/__init__.py
+instant_search/main.py
+instant_search.egg-info/PKG-INFO
+instant_search.egg-info/SOURCES.txt
+instant_search.egg-info/dependency_links.txt
+instant_search.egg-info/entry_points.txt
+instant_search.egg-info/top_level.txt

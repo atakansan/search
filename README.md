@@ -36,6 +36,54 @@ python3 instant_search_main.py "arama terimi"
 
 Ana script `/usr/local/bin/s` konumunda kurulu ve PATH'te mevcut.
 
+## Kurulum (Paket olarak)
+
+### PyPI'dan kurulum (yakında)
+```bash
+pip install instant-search
+```
+
+### GitHub'dan kurulum
+```bash
+pip install git+https://github.com/atakansan/search.git
+```
+
+### Platform notları
+- **macOS**: Tam destek, clipboard otomatik çalışır
+- **Windows**: Tam destek, clipboard otomatik çalışır  
+- **Linux**: Clipboard için `xclip` veya `xsel` gerekli:
+  ```bash
+  # Ubuntu/Debian
+  sudo apt install xclip
+  # veya
+  sudo apt install xsel
+  
+  # Fedora/RHEL
+  sudo dnf install xclip
+  ```
+
+### Manuel kurulum
+```bash
+git clone https://github.com/atakansan/search.git
+cd search
+pip install -e .
+```
+
+Kurulumdan sonra şu komutlarla kullanabilirsin:
+```bash
+instant-search "arama terimi"
+isearch "arama terimi"  
+s "arama terimi"
+```
+
+## Geliştirme
+
+```bash
+git clone https://github.com/atakansan/search.git
+cd search
+pip install -e .
+```
+
 ## Not
 
 Eski search ve search2 dizinleri archive'a taşındı. Aktif olan sadece bu search-final dizini.
