@@ -32,9 +32,9 @@ def instant_search(query):
         f"https://www.google.com/search?q={q}",
         f"https://www.linkedin.com/search/results/all/?keywords={q}",
         f"https://github.com/search?q={q}",
-        f"https://chat.openai.com/",
         f"https://www.perplexity.ai/search?q={q}",
         f"https://en.wikipedia.org/wiki/Special:Search?search={q}",
+        f"https://chat.openai.com/",
     ]
     
     print("🌐 Opening browser tabs...")
@@ -64,7 +64,7 @@ def main():
         instant_search(query)
     else:
         print("⚡ INSTANT MULTI-SEARCH")
-        print("Opens 8 search sites instantly!")
+        print("Opens 9 search sites instantly!")
         print("\nUsage: s 'your search term'")
         print("\nQuick start:")
         
