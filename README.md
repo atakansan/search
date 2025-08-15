@@ -6,7 +6,16 @@ Bu koleksiyon çeşitli arama araçlarını içerir.
 
 - **`instant_search_main.py`** - Ana arama scripti (`/usr/local/bin/s` kopyası)
   - Terminal'de `s` komutu ile çalışır  
-  - 8 farklı site açar: Cisco OneSearch, Circuit, Claude, Google, LinkedIn, GitHub, ChatGPT, Perplexity, Wikipedia
+  - 9 farklı site açar (sıralama):
+    1. OneSearch (Cisco)
+    2. Circuit (Cisco)
+    3. Perplexity AI
+    4. Google
+    5. Claude AI
+    6. ChatGPT
+    7. GitHub
+    8. Wikipedia
+    9. LinkedIn
   - Sorguyu clipboard'a kopyalar
 
 - **`instant_search.py`** - Alternatif versiyon
