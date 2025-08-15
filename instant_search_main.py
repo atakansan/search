@@ -23,18 +23,15 @@ def instant_search(query):
     
     # Define all your search URLs
     searches = [
-        # Your original 3 sites
-        f"https://onesearch.cisco.com/searchpage/v1?queryFilter={q}",
-        "https://circuit.cisco.com/app/home",
-        "https://claude.ai/new",
-        
-        # Bonus useful searches
-        f"https://www.google.com/search?q={q}",
-        f"https://www.linkedin.com/search/results/all/?keywords={q}",
-        f"https://github.com/search?q={q}",
-        f"https://www.perplexity.ai/search?q={q}",
-        f"https://en.wikipedia.org/wiki/Special:Search?search={q}",
-        f"https://chat.openai.com/",
+        f"https://onesearch.cisco.com/searchpage/v1?queryFilter={q}",  # 1
+        "https://circuit.cisco.com/app/home",  # 2
+        f"https://www.perplexity.ai/search?q={q}",  # 3
+        f"https://www.google.com/search?q={q}",  # 4
+        "https://claude.ai/new",  # 5
+        f"https://chat.openai.com/",  # 6
+        f"https://github.com/search?q={q}",  # 7
+        f"https://en.wikipedia.org/wiki/Special:Search?search={q}",  # 8
+        f"https://www.linkedin.com/search/results/all/?keywords={q}",  # 9
     ]
     
     print("🌐 Opening browser tabs...")
